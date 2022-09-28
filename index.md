@@ -1,5 +1,5 @@
 # [CSE-15L-Lab-Report](https://github.com/Awakenight/cse15l-lab-reports)
 --- 
-## CSE 15L
+## Markdown Demo
 > 1. *Italic*
 > 2. **Bolded**
