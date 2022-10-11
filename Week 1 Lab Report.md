@@ -40,8 +40,11 @@ Here's what the list of all the commands look like when inputed within the termi
 
 Here's a list of what some of the commands do.
 > ~ - stands for home directory
+>
 > cd <path> - changes your directory to swith which folder the shell is working from
+>
 > ls <path> - Lists out the files and folders within the current directory
+>
 > cat <file1> <file2> ... - Is used to print out contents from either single or mutltiple files
 
 ## Errors with logging with ssh
