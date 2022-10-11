@@ -10,10 +10,10 @@ Afterwards when you're down installing, open up VScode. It should look like the 
 ![Image](Screenshot 2022-09-30 151923.png)
 
 ## Remotely Connecting
-Now that we're down installing VScode, we want to connect to the remote servers. Before we run any commands, make sure you have OpenSS **client** 
-installed, and **ONLY OpenSS Client**, not OpenSS server. He is a link for the instructions to do so, [Install OpenSS](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui).
+Now that we're down installing VScode, we want to connect to the remote servers. Before we run any commands, if you are using **Windows** make sure you have OpenSS **client** 
+installed, and **ONLY OpenSS Client**, not OpenSS server. He is a link for the instructions to do so, [Install OpenSS](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). Otherwise, if you're not using a windows computer, skip this step.
 
-Once you have done so, create a new terminal. This is done so by selecting **Terminal** at the top and selecting **New Terminal**.
+Once you have installed and loaded up VScode, create a new terminal. This is done so by selecting **Terminal** at the top and selecting **New Terminal**.
 Put it this command, $ ssh cs15lfa22**zz**@ieng6.ucsd.edu, with the zz being replaced with you last two letters of you course account. 
 This can be found under this [link](https://sdacs.ucsd.edu/~icc/index.php) when signing in. The image below showcases the prompt that will
 show up when signing in for the first time, type in yes and it will prompt the password you use for your UCSD account
@@ -31,12 +31,18 @@ Now that we have successfuly logged in, try out these some of these commands and
 3. ls -lat
 4. ls -a
 5. ls <directory> where <directory> is /home/linux/ieng6/cs15lfa22/cs15lfa22abc, where the abc is one of the other group members’ username
-6. p /home/linux/ieng6/cs15lfa22/public/hello.txt ~/
+6. cp /home/linux/ieng6/cs15lfa22/public/hello.txt ~/
 7. cat /home/linux/ieng6/cs15lfa22/public/hello.txt
 
-Some have been already disscused in lecture, and other have not. Here's the list of all the commands inputed within the terminal
+Here's what the list of all the commands look like when inputed within the terminal.
 
 ![Image](Screenshot 2022-09-30 154653.png)
+
+Here's a list of what some of the commands do.
+> ~ - stands for home directory
+> cd <path> - changes your directory to swith which folder the shell is working from
+> ls <path> - Lists out the files and folders within the current directory
+> cat <file1> <file2> ... - Is used to print out contents from either single or mutltiple files
 
 ## Errors with logging with ssh
 ![Image](Screenshot 2022-09-30 155015.png)
