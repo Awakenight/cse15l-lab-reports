@@ -38,7 +38,7 @@ The code below shows how the path **/add**, implements the function of adding st
 2. **String[] parameters = url.getQuery().split("=")**, splits the query into two parts, the first part being "s" which 
 is a placeholder for the query which represents string, and the second part being the actual string we want to add to the list.
 3. **if (parameters[0].equals("s")) { words.add(0, parameters[1]); return parameters[1] + " added"; }**, adds the second part 
-of the query which we split, adding to an ArrayList of type String that we initialized before the method. Along with priting 
+of the query which we split, adding to an ArrayList of type String that we initialized before the method. Along with printing 
 out the message of adding te string to the list, which the image above showcases. 
 
 ![Image](Screenshot 2022-10-14 181052.png)
@@ -51,4 +51,22 @@ this example we are checking for the strings with the substring **"app"**. Notic
 
 ![Image](Screenshot 2022-10-14 172328.png)
 
+The code below shows how the path **/search**, implements the function of creating a list of strings with given substring:
+
+1. **String[] parameters = url.getQuery().split("=")**, splits the query into two parts, the first part being "s" which 
+is a placeholder for the query which represents string, and the second part being the actual string we want to add to the list.
+2. **ArrayList<String> chosenWords = new ArrayList<String>()**, is the ArrayList created to add the strings with the given substring.
+3. **if (parameters[0].equals("s"))**, checks for the first part of the query before checking the list of strings.
+4. **for (int i = 0; i < words.size(); i++)**, iterates throughout the list of strings added by the path **/add**.
+5. **if (words.get(i).contains(parameters[1]))**, checks for the given substring or second part of the query within each string.
+6. **chosenWords.add(0, words.get(i))**, adds to the ArrayList with all the strings with given substring when if statment is met.
+7. **return chosenWords.toString()**, creates a list of words with given substring as a message within the web server, which 
+the image above showcases.
+
 ![Image](Screenshot 2022-10-14 182134.png)
+
+# Part 2: Debugging
+
+---
+
+## 
