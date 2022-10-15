@@ -69,4 +69,25 @@ the image above showcases.
 
 ---
 
-## 
+## ArrayExamples.java, reversed(int[] arr)
+
+![Image](Screenshot 2022-10-14 190940.png)
+
+Failure-inducing input: An array with integers {5, 10}.
+
+![Image](Screenshot 2022-10-14 191646.png)
+
+Symptom: Returned an array with list of only zeros.
+
+![Image](Screenshot 2022-10-14 191833.png)
+
+Bug: arr[i] = newArray[arr.length - i - 1]; should instead be, newArray[i] = arr[arr.length - i - 1];
+and the method should return newArray instead of arr.
+
+The connection between the symptom and the bug is that due to the bug, if you were to input one or more 
+non-zero integers within the array, it will always output an arry with the same size but with all zeros.
+This is due to the elements for newArray being copied over to the inputed arr, in which there are only 
+integers of zero with the newArray.  
+
+## ListExamples.java, filter(List<String> list, StringChecker sc)
+
