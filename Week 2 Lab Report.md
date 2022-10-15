@@ -91,3 +91,20 @@ integers of zero with the newArray.
 
 ## ListExamples.java, filter(List<String> list, StringChecker sc)
 
+![Image](Screenshot 2022-10-14 195138.png)
+
+Failure-inducing input: Trying to input StringChecker object into method
+
+![Image](Screenshot 2022-10-14 213333.png)
+
+Symptom: Initialization error for ListExamples
+
+![Image](Screenshot 2022-10-14 213525.png)
+
+Bug: A potential class error when implementing StringChecker's abstract method checkString(String s) when 
+intializing ListExamples.
+
+The connection between the symptom and the bug is that due to the bug, when trying to test an input 
+of the StringChecker object, it is unable to do so due to StringChecker's abstract method not being 
+implemented properly. Therefore, when initializing the StringChecker object to ListExamples, it produces
+the error of "No runnable methods."
