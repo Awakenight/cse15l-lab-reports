@@ -48,7 +48,6 @@ of the first instance of the text:
 ## Part 2: Editing Styles for Remote Servers
 
 1st Style:
-
 Once, start in Visual Studio Code and make the edit there, then **scp** the file to the remote server and run it there 
 to confirm it works (you can just run **bash test.sh** on the remote to test it out). Consider having the appropriate 
 **scp** command in your command history or easily copy-pasteable!
@@ -59,7 +58,6 @@ Difficulties - Retyping the password to login to the remote ssh server, and writ
 the file to the correct directory.
 
 2nd Style:
-
 Second, start already logged into a **ssh** session. Then, make the edit for the task you chose in Vim, 
 then exit Vim and run **bash test.sh**.
 
