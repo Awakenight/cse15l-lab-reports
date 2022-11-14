@@ -59,7 +59,7 @@ Second, start already logged into a **ssh** session. Then, make the edit for the
 then exit Vim and run **bash test.sh**.
 
 Time - 35 sec.
-Difficulties - Figuring our the correct keys to press when navigating and editing files in vim
+Difficulties - Figuring our the correct keys to press when navigating and editing files in vim.
 
 ---
 
