@@ -15,9 +15,11 @@ Along with images of what the method looks like before and after.
 `/start<Enter>cebase<Esc>n.n.:w<Enter>`
 
 Before: 
+
 ![Image](Screenshot 2022-11-13 205859.png)
 
 After:
+
 ![Image](Screenshot 2022-11-13 210911.png)
 
 Here is an explaination on changing the first occurrence of the word “apple” to “banana” in a file containing 
@@ -46,19 +48,23 @@ of the first instance of the text:
 ## Part 2: Editing Styles for Remote Servers
 
 1st Style:
+
 Once, start in Visual Studio Code and make the edit there, then **scp** the file to the remote server and run it there 
 to confirm it works (you can just run **bash test.sh** on the remote to test it out). Consider having the appropriate 
 **scp** command in your command history or easily copy-pasteable!
 
 Time - 1.30 min.
+
 Difficulties - Retyping the password to login to the remote ssh server, and writing our the scp command to copy
 the file to the correct directory.
 
 2nd Style:
+
 Second, start already logged into a **ssh** session. Then, make the edit for the task you chose in Vim, 
 then exit Vim and run **bash test.sh**.
 
 Time - 35 sec.
+
 Difficulties - Figuring our the correct keys to press when navigating and editing files in vim.
 
 ---
