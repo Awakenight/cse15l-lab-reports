@@ -1,4 +1,4 @@
-# Week 8 Lab Report
+# Week 9 Lab Report
 
 ---
 
@@ -73,25 +73,36 @@ the image right above.
 
 Lines that ran
 1. rm -rf student-submission: 
+
 *standard output* - removes any files/directories labeled "student-submission"
+
 *return code* - 0
 
 2. git clone $1 student-submission: 
+
 *standard output* - copies the student repository into a created directory labeled student-submission. 
 Shown within the terminal is "Cloning into 'student-submission'..." to the line tha ends with "done".
+
 *return code* - 0
 
 3. cp TestListExamples.java student-submission/:
+
 *standard output* - copies file over to the directory
+
 *return code* - 0
 
 4. cd student-submission:
+
 *standard output* - shifts the directory 
+
 *return code* - 0
 
 5. if [[ -f $file ]] 
+
 *standard output* - if statement returns false and prints out to the terminal "Program unable to compile"
+
 *standard error* - doesn't find the name of file
+
 *return code* - 1
 
 Since if [[ -f $file ]] return code ends up being 1, we exit out of the bash script with the command `exit 1`.
