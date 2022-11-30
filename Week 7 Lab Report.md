@@ -23,7 +23,7 @@ After:
 ![Image](Screenshot 2022-11-13 210911.png)
 
 Here is an explaination on changing the first occurrence of the word “start” to “base” in a file containing 
-within the method **getFiles**, under the file **DocSearchSever.java**, using vim with the following keys: 
+the method **getFiles**, under the file **DocSearchSever.java**, using vim with the following keys: 
 
 `/start<Enter>cebase<Esc>:w<Enter>`
 
