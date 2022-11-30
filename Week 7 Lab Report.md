@@ -22,28 +22,28 @@ After:
 
 ![Image](Screenshot 2022-11-13 210911.png)
 
-Here is an explaination on changing the first occurrence of the word “apple” to “banana” in a file containing 
-**blueberry apple sauce**, using vim with the following keys: 
+Here is an explaination on changing the first occurrence of the word “start” to “base” in a file containing 
+within the method **getFiles**, under the file **DocSearchSever.java**, using vim with the following keys: 
 
-`/apple<Enter>cebanana<Esc>:w<Enter>`
+`/start<Enter>cebase<Esc>:w<Enter>`
 
-**/apple<Enter>** allows for you to search for text after **/**, which moves your cursor in front
+**/start<Enter>** allows for you to search for text after **/**, which moves your cursor in front
 of the first instance of the text:
 
-![Image](Screenshot 2022-11-13 211157.png)
+![Image](Screenshot 2022-11-29 200242.png)
 
 **ce**  allows for your to delete the text and switch to insert mode:
 
-![Image](Screenshot 2022-11-13 212633.png)
+![Image](Screenshot 2022-11-29 200709.png)
 
-**banana<Esc>** replaces the text by inputing the word **banana**, and 
+**base<Esc>** replaces the text by inputing the word **base**, and 
 **<Esc>** returns you back to normal mode:
 
-![Image](Screenshot 2022-11-13 213310.png)
+![Image](Screenshot 2022-11-29 200801.png)
 
-**:w<Enter** saves the changes made to the file:
+**:w<Enter** saves the changes made to the file **DocSearchSever.java**:
 
-![Image](Screenshot 2022-11-13 213447.png)
+![Image](Screenshot 2022-11-29 200914.png)
 
 ## Part 2: Editing Styles for Remote Servers
 
